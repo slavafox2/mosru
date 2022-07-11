@@ -1,12 +1,11 @@
 import allure
 import pytest
+import requests
+import urllib3
 import os
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
-
-import requests
-import urllib3
 from allure_commons.types import AttachmentType
 from requests.exceptions import MissingSchema, InvalidSchema, InvalidURL
 
@@ -26,7 +25,7 @@ def driver():
 
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
     _driver = webdriver.Chrome(executable_path=r'C:\Users\SL\Documents\PycharmProjects\chromedriver_win32\chromedriver.exe')
-    # driver.get('https://mos.ru')
+    # _driver.get('https://mos.ru')
     _driver.get('https://www.booking.com')
     _driver.implicitly_wait(4)
     yield _driver
