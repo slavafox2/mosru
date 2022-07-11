@@ -1,0 +1,8 @@
+.idea/
+venv/
+
+chromedriver.exe
+/.pytest_cache/
+/.vscode/
+/allure_report/
+/venv/
