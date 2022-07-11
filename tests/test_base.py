@@ -24,7 +24,8 @@ def try_exception_for_tags(driver, tag):
 def driver():
 
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-    _driver = webdriver.Chrome(executable_path=r'C:\Users\SL\Documents\PycharmProjects\chromedriver_win32\chromedriver.exe')
+    # _driver = webdriver.Chrome(executable_path=r'C:\Users\SL\Documents\PycharmProjects\chromedriver_win32\chromedriver.exe')
+    _driver = webdriver.Chrome()
     # _driver.get('https://mos.ru')
     _driver.get('https://www.booking.com')
     _driver.implicitly_wait(4)
